@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background: #121725;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.wrapper .card-image {
+  position: relative;
+  right: 0;
+}
+.wrapper .wrapper-top_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13.2px;
+  z-index: 2;
+  position: relative;
+  top: -610px;
+  left: 480px;
+}
+.wrapper .container {
+  max-width: 723px;
+  max-height: 509px;
+  position: relative;
+  z-index: 2;
+  left: 355px;
+  background: #121725;
+  padding: 88px 58px 0 0;
+}
+.wrapper .container .container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.wrapper .container .container-info h1 {
+  font-family: Chivo;
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 62px;
+  color: #FFFFFF;
+}
+.wrapper .container .container-info span {
+  font-family: Chivo;
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 62px;
+  color: #54E6AF;
+}
+.wrapper .container .container-info p {
+  font-family: Chivo;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #C2CBE5;
+  width: 445px;
+}
+.wrapper .container .container-card_search {
+  border-radius: 28px;
+  max-width: 427px;
+  padding: 5px 5px 5px 32px;
+  background: #2C344B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 63px;
+}
+.wrapper .container .container-card_search input {
+  font-family: Chivo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: #2C344B;
+  border: none;
+  outline: none;
+}
+.wrapper .container .container-card_search button {
+  border-radius: 28px;
+  padding: 9px 27px;
+  background: #54E6AF;
+  font-family: Chivo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #121725;
+  border: none;
+}
+.wrapper .container .container-card_search button:hover {
+  background: #B3FFE2;
+}
+.wrapper .container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+}
+.wrapper .container-parenter {
+  position: relative;
+  z-index: 2;
+  right: -888px;
+  top: 50px;
+}
+
+@media (max-width: 960px) {
+  .wrapper .card-image {
+    max-width: 491px;
+    height: 767px;
+  }
+  .wrapper .container {
+    padding: 93px 0px 0 0;
+  }
+  .wrapper .container .container-info span {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  .wrapper .container .container-info h1 {
+    font-size: 48px;
+  }
+  .wrapper .container .container-info p {
+    font-size: 18px;
+  }
+  .wrapper .container .container-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 20px;
+  }
+  .wrapper .container-parenter {
+    display: none !important;
+  }
+}
+@media (max-width: 630px) {
+  .wrapper .card-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -2;
+  }
+  .wrapper .container {
+    position: static;
+  }
+  .wrapper .container .container-info h1 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 38px;
+  }
+  .wrapper .container .container-info span {
+    font-family: Chivo;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+}
